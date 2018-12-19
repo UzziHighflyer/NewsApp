@@ -1,0 +1,426 @@
+*{
+	box-sizing: border-box;
+}
+
+body,p,h1,h2,h3,h4,h5,h6,ul{
+	font-family: 'Ubuntu', sans-serif;
+	margin:0;
+	padding:0;
+}
+
+.container{
+	width:1080px;
+	margin:0 auto;
+}
+
+.row:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+/*  HEADER  */
+
+.upperheader{
+	background: #341f97;
+	color:white;
+	padding:3px;
+}
+
+.levo{
+	float:left;
+}
+
+.desno{
+	float:right;
+}
+
+.desno a{
+	color:white;
+	margin-right:2px;
+}
+
+.inst,.twi,.fac{
+	transition:0.3s;
+}
+
+.inst:hover{
+	color:#8a3ab9;
+}
+
+.twi:hover{
+	color:#1dcaff;
+}
+
+.fac:hover{
+	color: #3B5998;
+}
+
+header{
+	background:#B33771;
+	background:black;
+	padding:20px;
+	border-bottom: 3px solid black;
+	color:white;
+}
+
+header h1{
+	float:left;
+	text-transform: uppercase;
+}
+
+header h1 a{
+	color:white;
+	font-weight: bold;
+	position:relative;
+	text-decoration: none;
+}
+
+.nav{
+	float:right;
+}
+
+.nav ul{
+	list-style-type: none;
+	display:inline;
+}
+
+.nav ul li{
+	display: inline;
+}
+
+.nav li a{
+	text-decoration: none;
+	color:white;
+}
+
+.nav li img{
+	position: relative;
+	top:10px;
+}
+
+.login header a{
+	color:white;
+}
+
+
+header a:hover{
+	color:#341f97;
+	transition:0.3s;
+}
+
+.login{
+	text-align:center;
+}
+
+.login form{
+	width:20%;
+	margin:50px auto;
+	border:3px solid black;
+	padding:20px;
+	background: #341f97;
+	color:white;
+}
+
+input,option,select{
+	padding:5px;
+	font-size:20px;
+	font-family:'Ubuntu',sans-serif;
+	margin:10px 0;
+
+}
+
+form{
+	overflow:hidden;
+}
+
+select{
+	background:inherit;
+	font-weight: bold;
+	border:none;
+	outline:none;
+	border-bottom:2px solid white;
+	cursor:pointer;
+	color:white;
+}
+
+select[name="vesti"]{
+	width:80%;
+}
+
+input[type="text"],input[type="password"],input[type="email"]{
+	background:inherit;
+	border:none;
+	color:white;
+	outline: none;
+	border-bottom:2px solid white;
+	font-weight: bold;
+}
+
+
+.submit{
+	background:inherit;
+	border:2px solid white;
+	color:white;
+	border-radius:2px;
+	outline:none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.submit:hover{
+	cursor:pointer;
+	color:#341f97;
+	background: white;
+}
+
+
+
+::placeholder {
+    color: white;
+    opacity: 1; 
+    font-weight: normal;
+}
+
+.link{
+	position:relative;
+	bottom:30px;
+	text-decoration: none;
+	color:black;
+}
+
+.link:hover{
+	text-decoration: underline;
+}
+
+
+/* MAIN */
+
+
+.main header img{
+	width:32px;
+	height:32px;
+	border-radius: 50%;
+}
+
+.main header a{
+	margin-left:10px;
+}
+
+.main header nav{
+	float:right;
+}
+
+.main header nav a{
+	float:left;
+}
+
+.submit1{
+	color:#341f97;
+	border:2px solid black;
+	background:inherit;
+	border-radius: 2px;
+	outline:none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.submit1:hover{
+	cursor:pointer;
+	color:white;
+	background: #341f97;
+}
+
+textarea{
+	width:400px;
+	height:100px;
+	resize:none;
+	margin:10px 0;
+	font-family:'Ubuntu',sans-serif;
+	font-size:15px;
+	border:2px solid black;
+	border-radius: 2px;
+	outline: none;
+	background: inherit
+}
+
+textarea::placeholder{
+	color:black;
+}
+
+.text{
+	background: white;
+	width:90%;
+}
+
+
+/* VESTI */
+
+.vesti {
+	padding:10px;
+	margin-bottom:5px;
+}
+
+.vesti a{
+	text-decoration: none;
+	color:white;
+}
+
+.vesti a:hover{
+	color:#341f97;
+}
+
+.vesti small{
+	color:#341f97;
+}
+
+.image{
+	position:relative;
+}
+
+.image h1{
+	position: absolute; 
+   	top: 10px; 
+   	left: 0; 
+   	width: 100%;
+   	font-size:32px;
+}
+
+.image h1 span{ 
+   	color: white;
+   	letter-spacing:-1;  
+  	background: rgba(0, 0, 0, 0.9);
+   	padding: 10px; 
+  	width: 100%;
+}
+
+.kategorije{
+	position:absolute;
+	left:0;
+	top:115px;
+	background: #341f97;
+	width:250px;
+	color:white;
+	padding:10px;
+	border:2px solid black;
+}
+
+.kategorije h2{
+	border-bottom:2px solid black;
+	padding:3px;
+}
+
+.kategorije ul{
+	margin:0;
+	list-style-type: none;
+}
+
+.kategorije ul li{
+	display:block;
+	padding:4px;
+	border-bottom: 2px solid black;
+	text-align: center;
+}
+
+.kategorije ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+.kategorije ul li a:hover{
+	color:black;
+}
+
+
+/* KOMENTARI */
+
+
+.komentar{
+	border:2px solid black;
+	margin:10px;
+	padding:10px;
+	border-radius:2px;
+}
+
+.ime{
+	font-weight: bold;
+}
+
+
+/* PROFIL */
+
+
+.profil {
+	border:2px solid #341f97;
+	margin:40px 10px 100px 10px;
+	border-radius:4px;
+	position:relative;
+	z-index:2;	
+}
+
+.podaci h2,.komentari h2{
+	background:linear-gradient(to right,#341f97,black);
+	color:white;
+	text-align:center;
+	padding:5px;
+}
+
+.podaci h2{
+	margin-top:170px;
+}
+
+.komentari h2{
+	margin:20px 0;
+}
+
+.profil img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position:absolute;
+	border:1px solid #341f97;
+	bottom:-10px;
+	right:420px;
+	z-index:10;
+}
+
+.profil .podaci{
+	margin-top:150px
+}
+
+.profil .podaci p{
+	margin-left:35%;
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.profil .cover{
+	height:150px;
+	width: 100%;
+	position:absolute;
+	z-index: -1;
+	border-radius: 2px;
+	background: linear-gradient(to right,#341f97,black);
+}
+
+
+/* FOOTER */
+
+
+.footer{
+	background:#341f97;
+	color:white;
+	margin-top:10px;
+	padding:13px;
+	font-size:17px;
+}
+
+.stiki{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+}
